@@ -6,11 +6,11 @@ export default function AppLogin(){
   
   return (
   <Home>
-    <p>Login</p>
-    <input type="text"/>
+    <label>Login</label>
+    <input type="text" placeholder="Digite seu login"/>
 
-    <p>Senha</p>
-    <input type="text" />
+    <label>Senha</label>
+    <input type="password" placeholder="Digite sua senha"/>
     <p>
       <Button
         border="3px"

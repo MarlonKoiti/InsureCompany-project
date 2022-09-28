@@ -20,6 +20,7 @@ const Button: React.FC<Props> = ({
     radius,
     textcolor,
     width
+
   }) => { 
   return (
     <button 

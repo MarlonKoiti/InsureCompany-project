@@ -1,27 +1,27 @@
 import React from "react";
 import Button from "../../Componentes/button";
-import { Structure } from "../../Componentes/structure";
-import { Input1 } from "./style";
+import { Layout , StyledInput } from "./style";
 
 export default function AppForget(){
   return(
-  <Structure>
-    <h1>Encontre sua conta do <span id="safe">Safe</span>Car</h1>
-    <Input1
-        placeholder="Digite seu e-mail"
+  <Layout>
+    <h1>Encontre sua conta do Safe<span>Car</span></h1>
+    <StyledInput
+        placeholder="Digite seu e-mail ou nome de usuário"
     />
     <Button
-        margin-top="2rem"
-        border="3px"
-        background="blue"
-        height = "6vh"
+        margin="0px 0px 20px 0px"
+        padding="1vh"
+        border="none"
+        background="#72CCAA"
+        width = "350px"
+        height = "45px"
         onClick={() => {alert("Botão funcionando")}}
-        radius = "12%"
-        width = "12vh"
+        radius = "5px"
         textcolor="white"
-        children = "Entrar"
+        children = "Buscar"
       />
-  </Structure>
+  </Layout>
   
   )
 }

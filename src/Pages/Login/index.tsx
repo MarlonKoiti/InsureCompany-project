@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../Componentes/button";
-import { Home } from "./style";
+import {Layout, StyledInput } from "./style";
 
-export default function AppLogin(){
+export interface LoginProps {}
+
+const AppLogin: React.FunctionComponent<LoginProps> = (props) => {
   
   return (
-  <Home>
+    <Layout>
     <label>Login</label>
-    <input type="text" placeholder="Digite seu login"/>
-
+    <StyledInput placeholder="Digite seu login"/>
+    <br /><br />
     <label>Senha</label>
-    <input type="password" placeholder="Digite sua senha"/>
+    <StyledInput placeholder="Digite sua senha"/> <br />
+    <Link to="/recover"> Esqueci minha senha</Link>
     <p>
       <Button
         border="3px"
@@ -23,6 +27,8 @@ export default function AppLogin(){
         children = "Entrar"
       />
       </p>
-  </Home>
+      </Layout>
   )
 }
+
+export default AppLogin;

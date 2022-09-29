@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import AppLogin from './Pages/Login/index'
+import Application from './Application'
+import Structure from "./Componentes/structure";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <AppLogin />
+    <Structure>
+      <Application />
+    </Structure>
   </React.StrictMode>
 )

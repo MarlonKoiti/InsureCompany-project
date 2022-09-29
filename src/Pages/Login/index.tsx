@@ -12,15 +12,14 @@ const AppLogin: React.FunctionComponent<LoginProps> = (props) => {
     <Layout>
     <h1>Entrar no Safe<span>Car</span></h1>
     <StyledInput placeholder="Usuário/Email"/>
-    <br /><br />
-    <StyledInput placeholder="Senha"/> <br />
+    <StyledInput placeholder="Senha"/>
       <Button
         margin="0px 0px 20px 0px"
         padding="1vh"
         border="none"
         background="#72CCAA"
-        height = "43px"
-        width = "308px"
+        height = "45px"
+        width = "320px"
         onClick={() => {alert("Botão funcionando")}}
         radius = "5px"
         textcolor="white"

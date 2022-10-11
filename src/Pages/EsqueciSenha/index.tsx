@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../Componentes/button";
-import { Layout , StyledInput } from "./style";
+import { Layout, StyledInput } from "./style";
 
 export default function AppForget(){
   return(
@@ -10,6 +10,7 @@ export default function AppForget(){
         placeholder="Digite seu e-mail ou nome de usuário"
     />
     <Button
+        display =""
         margin="0px 0px 20px 0px"
         padding="1vh"
         border="none"

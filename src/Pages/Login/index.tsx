@@ -14,6 +14,7 @@ const AppLogin: React.FunctionComponent<LoginProps> = (props) => {
     <StyledInput placeholder="Usuário/Email"/>
     <StyledInput placeholder="Senha"/>
       <Button
+        display =""
         margin="0px 0px 20px 0px"
         padding="1vh"
         border="none"
@@ -25,6 +26,7 @@ const AppLogin: React.FunctionComponent<LoginProps> = (props) => {
         textcolor="white"
         children = "Entrar"
       />
+      <Link style={{ textDecoration: 'none' }} to="/register"><SpanForgot>Cadastrar-se</SpanForgot></Link>
       <Link style={{ textDecoration: 'none' }} to="/recover"><SpanForgot>Esqueci minha senha</SpanForgot></Link>
       </Layout>
   )

@@ -1,18 +1,6 @@
 import styled from "styled-components";
 
-export const SpanForgot = styled.div`
-    display: block;
-    align-self: center;
-    text-align: center;
-    margin: 0px 0px 0px 550px;
-    border-radius: 2rem;
-    color: #C0C0C0;
-    border: 2px solid #C0C0C0;
-    width: 25px;
-    height: 25px;
-`
 export const Layout = styled.div`
-    
     font-family: Poppins, sans-serif;
     display: flex;
     align-items: center;
@@ -23,24 +11,19 @@ export const Layout = styled.div`
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
     border-radius: 10px;
-    width: 650px;
+    width: 700px;
     height: 500px;
     h1 {
-        margin-top: 0px;
+        margin-bottom: 0px;
         font-weight: bold;
         color: #72CCAA;
         font-size: 25px;
     }
-    span {
-        font-weight: bold;
-        color: #C0C0C0;
-        margin-bottom: 1rem;
-    }
-`
-
+  `
+  
 export const StyledInput = styled.input`
     display: block;
-    margin-bottom: 1rem;
+    margin: 40px 0px 100px 0px;
     text-align: center;
     width: 350px;
     height: 45px;
@@ -51,21 +34,14 @@ export const StyledInput = styled.input`
 
     &:focus {
         display: inline-block;
-        backdrop-filter: blur(12rem);
-    }
-    &:hover{
-        place-content:none;
         box-shadow: 0 0 0 0.2rem #72CCAA;
+        backdrop-filter: blur(12rem);
         border-radius: 1rem;
-        &::placeholder {
-            color: #72CCAA;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: bold;
     }
-}
-&::placeholder {
-        color: #8E8A8A;
+    &::placeholder {
+        color: #72CCAA;
+        text-align: center;
+        font-size: 1rem;
         font-weight: bold;
     }
 `

@@ -11,6 +11,8 @@ interface Props {
   width: string;
   margin: string;
   padding: string;
+  display: string;
+  
 }
 
 const Button: React.FC<Props> = ({ 
@@ -23,7 +25,9 @@ const Button: React.FC<Props> = ({
     textcolor,
     width,
     margin,
-    padding
+    padding,
+    display,
+
   }) => { 
   return (
     <button 
@@ -36,7 +40,8 @@ const Button: React.FC<Props> = ({
          color: textcolor,
          width,
          margin,
-         padding
+         padding,
+         display
       }}
     >
     {children}

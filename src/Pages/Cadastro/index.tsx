@@ -1,45 +1,52 @@
 import React from "react";
 import Button from "../../Componentes/button";
 import { Structure } from "../../Componentes/structure";
-import { Input1 } from "./style";
+import { Link } from "react-router-dom";
+import { Layout , StyledInput , SpanForgot } from "./style";
 
-export default function Cadastrar(){
+export default function Register(){
   return(
-  <Structure>
-    <h1>Encontre sua conta do <span id="safe">Safe</span>Car</h1>
-
-    <Input1
+  <Layout>
+    <Link style={{ textDecoration: 'none' }} to="/login"><SpanForgot>X</SpanForgot></Link>
+    <h1>Cadastrar Cliente</h1>
+    <span>Preencha os dados</span>
+    <StyledInput
         placeholder="Nome"
     />
 
-    <Input1
+    <StyledInput
         placeholder="Email"
     />
-
-    <Input1
-        placeholder="Senha"
+    <StyledInput 
+        placeholder="Serviço"
     />
 
-    <Input1
+    <StyledInput
+        placeholder="Carro"
+    />
+
+    <StyledInput
         placeholder="Telefone"
     />
 
-    <Input1
+    <StyledInput
         placeholder="CPF"
     />
 
     <Button
-        margin-top="2rem"
-        border="3px"
-        background="blue"
-        height = "6vh"
+        display =""
+        margin="0px 0px 20px 0px"
+        padding="1vh"
+        border="none"
+        background="#72CCAA"
+        height = "45px"
+        width = "320px"
         onClick={() => {alert("Botão funcionando")}}
-        radius = "12%"
-        width = "12vh"
+        radius = "5px"
         textcolor="white"
-        children = "Entrar"
+        children = "Cadastrar Cliente"
       />
-  </Structure>
+  </Layout>
   
   )
 }
